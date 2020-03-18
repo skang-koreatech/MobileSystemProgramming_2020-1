@@ -1,0 +1,2 @@
+rootProject.name='MSP02_Accelerometer'
+include ':app'
