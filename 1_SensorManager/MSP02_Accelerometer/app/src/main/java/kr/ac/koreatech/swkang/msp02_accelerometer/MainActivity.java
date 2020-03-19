@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
     private SensorManager mSensorManger;
-    private Sensor mOrientation;
+    private Sensor mAccel;
     TextView mText;
 
     @Override
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         setContentView(R.layout.activity_main);
 
         mSensorManger = (SensorManager)getSystemService(Context.SENSOR_SERVICE);
-        mOrientation = mSensorManger.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mAccel = mSensorManger.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         mText = findViewById(R.id.text);
     }
 
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     protected void onResume() {
         super.onResume();
         // SensorEventListener 등록
-        mSensorManger.registerListener(this, mOrientation, SensorManager.SENSOR_DELAY_UI);
+        mSensorManger.registerListener(this, mAccel, SensorManager.SENSOR_DELAY_UI);
     }
 
     @Override
