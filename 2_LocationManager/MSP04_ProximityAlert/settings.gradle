@@ -1,0 +1,2 @@
+rootProject.name='MSP04_ProximityAlert'
+include ':app'
