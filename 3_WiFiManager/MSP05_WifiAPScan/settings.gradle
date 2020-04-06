@@ -1,0 +1,2 @@
+rootProject.name='MSP05_WifiAPScan'
+include ':app'
