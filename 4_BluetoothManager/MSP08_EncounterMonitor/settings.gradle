@@ -1,0 +1,2 @@
+rootProject.name='MSP08_EncounterMonitor'
+include ':app'
