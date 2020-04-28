@@ -1,0 +1,2 @@
+rootProject.name='MSP11_StepMonitor'
+include ':app'
