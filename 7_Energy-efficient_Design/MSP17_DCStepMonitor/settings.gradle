@@ -1,0 +1,2 @@
+rootProject.name='MSP17_DCStepMonitor'
+include ':app'
